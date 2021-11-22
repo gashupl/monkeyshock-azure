@@ -23,12 +23,14 @@ namespace MonkeyShock.Azure.WebApi.Controllers
             _db = dbContext;
         }
 
+        //GET: https://localhost:7057/v1/countries
         [EnableQuery(PageSize = 15)]
         public IQueryable<Country> Get()
         {
             return _db.Countries;
         }
 
+        //GET: https://localhost:7057/v1/countries/1
         [EnableQuery]
         public SingleResult<Country> Get([FromODataUri] int key)
         {
@@ -36,6 +38,11 @@ namespace MonkeyShock.Azure.WebApi.Controllers
             return SingleResult.Create(result);
         }
 
+        //POST: https://localhost:7057/v1/countries
+        //Body:
+        //{
+        //  "Name": "Ukraine"
+        //}
         [EnableQuery]
         public async Task<IActionResult> Post([FromBody] Country country)
         {
@@ -44,6 +51,11 @@ namespace MonkeyShock.Azure.WebApi.Controllers
             return Created(country);
         }
 
+        //PATH: https://localhost:7057/v1/countries/4
+        //Body:
+        //{
+        //  "Name": "Ukraine"
+        //}
         [EnableQuery]
         public async Task<IActionResult> Patch([FromODataUri] int key, Delta<Country> country)
         {
@@ -77,6 +89,7 @@ namespace MonkeyShock.Azure.WebApi.Controllers
             return Updated(existingCountry);
         }
 
+        //DELETE: https://localhost:7057/v1/countries/1
         [EnableQuery]
         public async Task<IActionResult> Delete([FromODataUri] int key)
         {
