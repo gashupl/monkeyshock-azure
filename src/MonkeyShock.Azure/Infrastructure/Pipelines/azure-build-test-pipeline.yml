@@ -1,0 +1,38 @@
+# Pipeline for building Azure model-driven app code and all its extensions
+
+trigger:
+  branches:
+    include:
+    - '*'
+
+name: '$(Build.SourceBranchName).$(Build.BuildId)'
+
+pool:
+  vmImage: 'windows-2022'
+
+variables:
+- group: ADDRESSES
+- name: solution
+  value: '**/MonkeyShock.Azure.sln'
+- name: buildPlatform
+  value: 'Any CPU'
+- name: buildConfiguration
+  value: 'Release'
+- name: version
+  value: '1.0.1.$(Build.BuildId)'
+
+steps:
+- task: NuGetToolInstaller@1
+  displayName: Install Nuget 
+
+- task: NuGetCommand@2
+  displayName: Restore nugets for solution
+  inputs:
+    restoreSolution: '$(solution)'
+
+- task: VSBuild@1
+  displayName: Build VS solution
+  inputs:
+    solution: '$(solution)'
+    platform: '$(buildPlatform)'
+    configuration: '$(buildConfiguration)'
