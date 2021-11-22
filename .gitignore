@@ -10,3 +10,6 @@
 /src/MonkeyShock.Azure/Code/MonkeyShock.Azure.WebApi/bin/Debug/net6.0
 /src/MonkeyShock.Azure/Code/MonkeyShock.Azure.WebApi/obj
 /src/MonkeyShock.Azure/Code/MonkeyShock.Azure.WebApi/appsettings.Development.json
+/src/MonkeyShock.Azure/Infrastructure/MonkeyShock.Azure.ResourceGroup/bin/Debug/staging/MonkeyShock.Azure.ResourceGroup
+/src/MonkeyShock.Azure/Infrastructure/MonkeyShock.Azure.ResourceGroup/obj/Debug
+/src/MonkeyShock.Azure/.vs/MonkeyShock.Azure/config

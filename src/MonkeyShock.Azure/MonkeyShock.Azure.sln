@@ -9,6 +9,10 @@ Project("{00D1A9C2-B5F0-4AF3-8072-F6C62B433612}") = "MonkeyShock.Azure.Database"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MonkeyShock.Azure.WebApi", "Code\MonkeyShock.Azure.WebApi\MonkeyShock.Azure.WebApi.csproj", "{19837F05-5E8C-4E99-8881-150B35CD92AA}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastructure", "{FCD0C4ED-BC6B-462E-BD9F-C18346F6C496}"
+EndProject
+Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "MonkeyShock.Azure.ResourceGroup", "Infrastructure\MonkeyShock.Azure.ResourceGroup\MonkeyShock.Azure.ResourceGroup.deployproj", "{5F8E0844-7B94-4E29-8DC4-EDBC06CEDE75}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +29,10 @@ Global
 		{19837F05-5E8C-4E99-8881-150B35CD92AA}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{19837F05-5E8C-4E99-8881-150B35CD92AA}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{19837F05-5E8C-4E99-8881-150B35CD92AA}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5F8E0844-7B94-4E29-8DC4-EDBC06CEDE75}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F8E0844-7B94-4E29-8DC4-EDBC06CEDE75}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F8E0844-7B94-4E29-8DC4-EDBC06CEDE75}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F8E0844-7B94-4E29-8DC4-EDBC06CEDE75}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -32,6 +40,7 @@ Global
 	GlobalSection(NestedProjects) = preSolution
 		{89033076-0799-4C77-B0DD-9F392651D082} = {7237738D-D0E6-4DB6-8EA1-3CC69B79FF6F}
 		{19837F05-5E8C-4E99-8881-150B35CD92AA} = {7237738D-D0E6-4DB6-8EA1-3CC69B79FF6F}
+		{5F8E0844-7B94-4E29-8DC4-EDBC06CEDE75} = {FCD0C4ED-BC6B-462E-BD9F-C18346F6C496}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5DE2422A-7E55-4F51-918C-99260B14E0F4}
