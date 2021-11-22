@@ -3,3 +3,10 @@
 ################################################################################
 
 /src/MonkeyShock.Azure/.vs/MonkeyShock.Azure/v17
+/src/MonkeyShock.Azure/Code/MonkeyShock.Azure.Database/bin/Debug
+/src/MonkeyShock.Azure/Code/MonkeyShock.Azure.Database/obj/Debug
+/src/MonkeyShock.Azure/Code/MonkeyShock.Azure.Database/MonkeyShock.Azure.Database.sqlproj.user
+/src/MonkeyShock.Azure/Code/MonkeyShock.Azure.Database/MonkeyShock.Azure.Database.jfm
+/src/MonkeyShock.Azure/Code/MonkeyShock.Azure.WebApi/bin/Debug/net6.0
+/src/MonkeyShock.Azure/Code/MonkeyShock.Azure.WebApi/obj
+/src/MonkeyShock.Azure/Code/MonkeyShock.Azure.WebApi/appsettings.Development.json
