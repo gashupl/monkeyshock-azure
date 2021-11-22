@@ -13,3 +13,8 @@
 /src/MonkeyShock.Azure/Infrastructure/MonkeyShock.Azure.ResourceGroup/bin/Debug/staging/MonkeyShock.Azure.ResourceGroup
 /src/MonkeyShock.Azure/Infrastructure/MonkeyShock.Azure.ResourceGroup/obj/Debug
 /src/MonkeyShock.Azure/.vs/MonkeyShock.Azure/config
+/src/MonkeyShock.Azure/Code/MonkeyShock.Azure.Database/bin/Release
+/src/MonkeyShock.Azure/Code/MonkeyShock.Azure.Database/obj/Release
+/src/MonkeyShock.Azure/Code/MonkeyShock.Azure.WebApi/bin/Release/net6.0
+/src/MonkeyShock.Azure/Infrastructure/MonkeyShock.Azure.ResourceGroup/bin/Release/staging/MonkeyShock.Azure.ResourceGroup
+/src/MonkeyShock.Azure/Infrastructure/MonkeyShock.Azure.ResourceGroup/obj/Release

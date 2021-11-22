@@ -13,6 +13,11 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Infrastructure", "Infrastru
 EndProject
 Project("{151D2E53-A2C4-4D7D-83FE-D05416EBD58E}") = "MonkeyShock.Azure.ResourceGroup", "Infrastructure\MonkeyShock.Azure.ResourceGroup\MonkeyShock.Azure.ResourceGroup.deployproj", "{5F8E0844-7B94-4E29-8DC4-EDBC06CEDE75}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Pipelines", "Pipelines", "{43EC5336-EDB5-4CF7-BDED-88C7F635CE5A}"
+	ProjectSection(SolutionItems) = preProject
+		Infrastructure\Pipelines\azure-build-test-pipeline.yml = Infrastructure\Pipelines\azure-build-test-pipeline.yml
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -41,6 +46,7 @@ Global
 		{89033076-0799-4C77-B0DD-9F392651D082} = {7237738D-D0E6-4DB6-8EA1-3CC69B79FF6F}
 		{19837F05-5E8C-4E99-8881-150B35CD92AA} = {7237738D-D0E6-4DB6-8EA1-3CC69B79FF6F}
 		{5F8E0844-7B94-4E29-8DC4-EDBC06CEDE75} = {FCD0C4ED-BC6B-462E-BD9F-C18346F6C496}
+		{43EC5336-EDB5-4CF7-BDED-88C7F635CE5A} = {FCD0C4ED-BC6B-462E-BD9F-C18346F6C496}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {5DE2422A-7E55-4F51-918C-99260B14E0F4}

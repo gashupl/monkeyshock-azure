@@ -36,3 +36,23 @@ steps:
     solution: '$(solution)'
     platform: '$(buildPlatform)'
     configuration: '$(buildConfiguration)'
+
+- task: CopyFiles@2
+  displayName: Copy Database project build to staging folder
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)/src/MonkeyShock.Azure/Code/MonkeyShock.Azure.Database/bin/Release/'
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/Database'
+
+- task: CopyFiles@2
+  displayName: Copy Web App project build to staging folder
+  inputs:
+    SourceFolder: '$(Build.SourcesDirectory)/src/MonkeyShock.Azure/Code/MonkeyShock.Azure.WebApi/bin/Release/net6.0/'
+    Contents: '**'
+    TargetFolder: '$(Build.ArtifactStagingDirectory)/WebApi'
+
+- task: PublishBuildArtifacts@1
+  displayName: Publish build artifacts
+  inputs:
+    PathtoPublish: '$(Build.ArtifactStagingDirectory)'
+    ArtifactName: 'DataverseSolutionArtifact'
