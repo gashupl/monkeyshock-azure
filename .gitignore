@@ -18,3 +18,8 @@
 /src/MonkeyShock.Azure/Code/MonkeyShock.Azure.WebApi/bin/Release/net6.0
 /src/MonkeyShock.Azure/Infrastructure/MonkeyShock.Azure.ResourceGroup/bin/Release/staging/MonkeyShock.Azure.ResourceGroup
 /src/MonkeyShock.Azure/Infrastructure/MonkeyShock.Azure.ResourceGroup/obj/Release
+/src/MonkeyShock.Azure/.vs/MonkeyShock.Azure
+/src/MonkeyShock.Azure/Code/MonkeyShock.Azure.Database/MonkeyShock.Azure.Database.dbmdl
+/src/MonkeyShock.Azure/Code/MonkeyShock.Azure.WebApi/Properties/PublishProfiles
+/src/MonkeyShock.Azure/Code/MonkeyShock.Azure.WebApi/Properties/ServiceDependencies/MonkeyshockWeb - Web Deploy/profile.arm.json
+/src/MonkeyShock.Azure/Code/MonkeyShock.Azure.WebApi/MonkeyShock.Azure.WebApi.csproj.user
