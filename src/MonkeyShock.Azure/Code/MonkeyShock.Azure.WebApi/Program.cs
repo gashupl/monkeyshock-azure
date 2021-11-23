@@ -19,7 +19,12 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Services.AddDbContext<CountryAppContext>(
     options => options.UseSqlServer(builder.Configuration.GetConnectionString("Default"))
 );
-builder.Services.AddControllers().AddOData(opt => opt.AddRouteComponents("v1", GetEdmModel()).Filter().Select().Expand());
+builder.Services.AddControllers().AddOData(opt => opt.AddRouteComponents("v1", GetEdmModel())
+    .Filter()
+    .Select()
+    .Expand()
+    .Count()
+    .SetMaxTop(250));
 
 var app = builder.Build();
 
