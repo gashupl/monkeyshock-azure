@@ -1,4 +1,4 @@
-namespace MonkeyShock.Azure.WebApi
+namespace MonkeyShock.Azure.WebApi.Model
 {
     public class Country
     {

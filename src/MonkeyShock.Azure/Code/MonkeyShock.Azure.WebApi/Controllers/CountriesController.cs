@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.OData.Query;
 using Microsoft.AspNetCore.OData.Results;
 using Microsoft.AspNetCore.OData.Routing.Controllers;
 using Microsoft.EntityFrameworkCore;
-using System.Linq; 
+using MonkeyShock.Azure.WebApi.Model;
 
 namespace MonkeyShock.Azure.WebApi.Controllers
 {
@@ -13,11 +13,11 @@ namespace MonkeyShock.Azure.WebApi.Controllers
     [Route("[controller]")]
     public class CountriesController : ODataController
     {
-        private readonly CountryAppContext _db;
+        private readonly Model.AppContext _db;
 
         private readonly ILogger<CountriesController> _logger;
 
-        public CountriesController(CountryAppContext dbContext, ILogger<CountriesController> logger)
+        public CountriesController(Model.AppContext dbContext, ILogger<CountriesController> logger)
         {
             _logger = logger;
             _db = dbContext;

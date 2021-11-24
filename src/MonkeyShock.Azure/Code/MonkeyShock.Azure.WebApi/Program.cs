@@ -2,7 +2,7 @@ using Microsoft.AspNetCore.OData;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.OData.Edm;
 using Microsoft.OData.ModelBuilder;
-using MonkeyShock.Azure.WebApi;
+using MonkeyShock.Azure.WebApi.Model;
 
 //Try tutorial: https://dev.to/berviantoleo/odata-with-net-6-5e1p
 
@@ -16,8 +16,8 @@ static IEdmModel GetEdmModel()
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
-builder.Services.AddDbContext<CountryAppContext>(
-    options => options.UseSqlServer(builder.Configuration.GetConnectionString("Default"))
+builder.Services.AddDbContext<MonkeyShock.Azure.WebApi.Model.AppContext>(
+    (DbContextOptionsBuilder options) => options.UseSqlServer(builder.Configuration.GetConnectionString("Default"))
 );
 builder.Services.AddControllers().AddOData(opt => opt.AddRouteComponents("v1", GetEdmModel())
     .Filter()
