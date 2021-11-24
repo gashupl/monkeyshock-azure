@@ -10,6 +10,7 @@ static IEdmModel GetEdmModel()
 {
     ODataConventionModelBuilder builder = new();
     builder.EntitySet<Country>("Countries");
+    builder.EntitySet<City>("Cities");
     return builder.GetEdmModel();
 }
 

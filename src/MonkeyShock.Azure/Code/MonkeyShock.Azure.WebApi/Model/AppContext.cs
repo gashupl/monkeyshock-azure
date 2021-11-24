@@ -6,6 +6,8 @@ namespace MonkeyShock.Azure.WebApi.Model
     {
         public DbSet<Country> Countries { get; set; }
 
+        public DbSet<City> Cities { get; set; }
+
         public AppContext(DbContextOptions<AppContext> options) : base(options)
         {
 
